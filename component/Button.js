@@ -11,7 +11,7 @@ export const Button = (props) => {
 export const FlowBtn = (props) => {
     return(
         <TouchableOpacity activeOpacity={0.6} onPress={props.onPress} style={[styles.flowBtn,props.button]}>
-            <MaterialCommunityIcons name='wechat' color='#fff'  size={50}/>
+            <MaterialCommunityIcons name={props.iconName} color='#fff'  size={40}/>
         </TouchableOpacity>
     )
 }
@@ -35,14 +35,14 @@ const styles = StyleSheet.create({
   },
   flowBtn:{
     backgroundColor:'orange',
-    borderRadius:12,
+    borderRadius:30,
     width:60,
     height:60,
     justifyContent:'center',
     alignItems:'center',
     position:'absolute',
-    right:35,
-    bottom:40,
+    right:20,
+    bottom:30,
     shadowColor: '#000',
   }
 
